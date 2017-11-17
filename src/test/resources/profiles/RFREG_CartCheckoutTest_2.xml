@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CartCheckoutTest_2">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+	</listeners>
+	<test name="CartCheckoutTest_2">
+		<classes>
+
+			<class 	name="com.rf.test.website.storeFront.hybris.CartAndCheckoutValidationTest" />
+			<methods>
+				<include name="testAdd_20_ProductsToTheCartAndUpdateQuantityFromProductDetailsScreen_2308" />
+				<include name="testVerifyKitProductAreNotDisplayedDuringAdhocOrder_4773" />
+				<include name="testTrySelecting2ShippingAddress_2282" />
+				<include name="testValidateErrorMessagesThroughOutChkOutFlow_2368" />
+				<include name="testAddMultipleCardsAndSelectMultipleCardForPaymentOnCheckoutScreen_2280" />
+				<include name="testSelectShippingMethod_2284" />
+				<include name="testAddNewBillingAddressDuringCheckoutAndEditExistingOne_2277" />
+				<include name="testCheckShippingAndHandlingFeeForOrderTotal0To99_2140" />
+				<include name="testCreateAdhocOrderWithAmericanExpressCard_1885" />
+				<include name="testCreateAdhocOrderWithVisaCard_1888" />
+				<include name="testCreateOrderWithShippingMethodUPS2Day_1890" />
+				<include name="testDoNotUpdateBillingProfileForAutoShipOnChangingDefaultSelection_2108" />*
+				<include name="testShippingAddressSelectedInAutoShipCart_2390" />
+				<include name="testCheckShippingAndHandlingFeeForUPS1DayCRPAutoship_565q" />
+				<include name="testCheckShippingAndHandlingFeeForUPS2DayConsultantEnrollmentKit_2147" />
+				<include name="testCreateAdhocOrderWithMasterCard_1889" />
+				<include name="testShouldNotAllowDiscoverCardOnTHeStoreFront_1886" />
+				<include name="testEditShoppingCartWhileCheckingOut_2092" />
+				<include name="testNavigateToExistingCartFromMiniCartInTheHeader_2303" />
+				<include name="testClickOnBuyNowForALoggedInConsultant_3748" />
+				<include name="testGuestUserOnTheBizAndClickOnBuyNow_4014" />
+				<include name="testGuestUserOnTheComAndClickOnBuyNow_4015" />
+				<include name="testPlaceOrderConsultantPWSWithBuyNowBtnOnCategoryLandingPage_3737" />
+				<include name="testEditCartSubtotalIsRecalculated_2296" />
+				<include name="testAutoshipUpdateFlowReviewAndConfirm_146" />
+				<include name="testAddMultipeShippingProfileDuringCheckout_2281" />
+				<include name="testCheckCartFromMiniCartAfterAddingProduct_2304" />	
+				<include name="testBrowserBackButtonFromCheckoutToCart_2271" />		
+			</methods>
+		</classes>
+	</test>
+</suite>

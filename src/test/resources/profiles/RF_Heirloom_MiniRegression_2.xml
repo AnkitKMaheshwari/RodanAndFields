@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MiniRegressionSuite_Heirloom_2">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+	</listeners>
+	<test name="MiniRegressionTest_Heirloom_2">
+		<classes>
+			<class	 name="com.rf.test.website.storeFront.brandRefresh.CorpTest">
+				<methods>
+						<include name="testConsultantExpressEnrollmentFromCorp_2349"/>
+				</methods>
+			</class>
+			<class	 name="com.rf.test.website.storeFront.brandRefresh.ComPWSTest">
+				<methods>
+					<include name="testShopSkinCarePWS_419_2391"/>
+					<include name="testLoginAsExistingPCFromCOM_2392"/>
+					<include name="testLoginAsExistingRCFromCOM_2393"/>
+					<include name="testLogoutWithAValidUserOnCOMPWS_2394"/>
+					<include name="testRCEnrollmentFromCOM_2406"/>
+					<include name="testPCEnrollmentFromCOM_2407"/>
+					<include name="testMyAccountOptionsAsPCCustomerFromCOM_2413"/>
+					<include name="testPCUserTerminationFromCOM_2415"/>
+					<include name="testPCPerksDelay30DaysFromCOM_2416"/>
+					<include name="testPCPerksTemplateUpdateFromCOM_2418"/>
+					<include name="testAdhocOrderRCFromCOM_2421"/>
+					<include name="testAdhocOrderConsultantsOnlyProductsFromCOM_2422"/>
+					<include name="testPCPerksDelay30DaysFromCOM_2416"/>
+					<include name="testRegisteringThePCUsingRetailCustomerEmailId_2408"/>
+				</methods>
+			</class>
+			<class	 name="com.rf.test.website.storeFront.brandRefresh.BizPWSTest">
+				<methods>
+				  <include name="testConsultantStandardEnrollmentBizPWS_2347"/>
+				  <include name="testConsultantEnrollmentSignUpOnBizPWS_2348"/>
+				  <include name="testRCEnrollmentFromBIZ_2350"/>
+				  <include name="testPCEnrollment_2351"/>
+				  <include name="testAdhocOrderThroughRCFromBIZ_2358"/>
+				  <include name="testAdhocOrderConsultantsOnlyProductsBiz_2359"/>
+				  <include name="testAddProductToTheCartCheckoutAsPCFromBIZ_2360"/>
+				  <include name="testLoginAsAnExistingConsultantFromBIZ_2361"/>
+				  <include name="testLoginAsExistingPCFromBIZ_2362"/>
+				  <include name="testLoginAsExistingRCFromBIZ_2363"/>
+				  <include name="testLogoutWithAValidUserOnBizPWS_2364"/>
+				  <include name="testForgotPasswordFromBIZ_2376"/>
+				</methods>
+			</class>
+			</classes>
+	</test>
+</suite>

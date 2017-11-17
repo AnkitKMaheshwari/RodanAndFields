@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="AccountSuite_1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+	</listeners>
+	<test name="AccountTest_1">
+		<classes>
+			<class name="com.rf.test.website.storeFront.hybris.AccountTest" />
+				<methods>
+	        	<include name="testPhoneNumberFieldValidationForConsultant_2241" />
+				<include name="testVerifyLogoutwithValidCredentials_1977" />
+				<include name="testUsernameValidations_2512" />
+				<include name="testAutoshipModuleCheckMyPulseUI_1976" />
+				<include name="testResetPasswordFromStorefrontAndRecheckLogin_3009" />
+				<include name="testEditAllowMySpouseInMyAccount_86" />
+				<include name="terminateUserAndLoginWithSameUsername_4281" />
+				<include name="testVerifyUserCanCancelPulseSubscriptionThroughMyAccount_2233" />
+				<include name="testVerifySubscribeToPulse_2134" />
+				<include name="testPCUserCancelPcPerks_2234_4803" />
+				<include name="testCheckAnotherConsultantSitePrefixWhileEnrollingToPulse_4769"/>
+				</methods>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="miniRegressionTestSuite_CA_AU_1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+	</listeners>
+	<test name="miniRegressionTest_1">
+		<classes>
+			<class	 name="com.rf.test.website.storeFront.hybris.ExpressEnrollmentValidationTest">
+				<methods>
+					<include name="testExpressEnrollmentFieldsValidationWithInvalidCardNumbers_1274_1361_82" />
+				</methods>
+			</class>
+			<class	 name="com.rf.test.website.storeFront.hybris.StandardEnrollmentValidationTest">
+				<methods>
+					<include name="testEnrollInCRPFromMyAccountShipImmediately_132" />
+				</methods>
+			</class>
+			<class	 name="com.rf.test.website.storeFront.hybris.PC_RC_EnrollmentValidationTest">
+				<methods>
+					<include name="testRegisterAsPCWithDifferentSponserWithPulseCOM_3865_3974" />
+					<include name ="testJoinPCPerksInOrderSummarySection_3877" />
+				 </methods>
+			</class>
+				<class	 name="com.rf.test.website.storeFront.hybris.majorEnrollments.EnrollmentsTest">
+				<methods>
+					<include name="testCcsRCEnrollmentUnderUSSponsor_3618" />
+					<include name="testCcsPCEnrollmentUnderUSSponsor_3617" />
+				</methods>
+			</class>			
+			<class name="com.rf.test.website.storeFront.hybris.HomePageFunctionalityTest">
+				<methods>
+					<include name="testAboutSectionOfMeetYourConsultantPage_3832" />
+					<include name="testAccessSolutionToolFromComSite_4027" />
+					<include name="testContactYourSponsorSectionInGettingStartedPage_1898" />
+					<include name="testCountryCannotBeModified_4677" />
+					<include name="testJoinMyTeamButtonPresentOnTheComAndBizSite_4350" />
+					<include name="testLoginToUSConsultantPWSAsAnotherUSConsultantWithPulse_4070" />
+					<include name="testSearchWithActivePreferredCustomerAccountId_3988" />
+					<include name="testSSNValidationForConsultantTryingToCancelUnderInvalidSponsorUpline_101" />
+					<include name="testVerifyMeetConsultantPage_1892" />
+					<include name="testSearchWithPWSPrefixCOMSite_3983" />
+				</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.hybris.UpgradeDowngradeTest">
+				<methods>
+					<include name="testActivePCEmailIdDuringConsultantEnrollmentUnderDifferentSponsor_3959" />
+					<include name="testActivePCEmailIdDuringConsultantEnrollmentUnderSameSponsor_3958" />
+					<include name="testConsultantToPCDownGradeforCanadianUser_4724" />
+					<include name="testDowngradePCToRCAtPaymentOrderSummaryPage_3898" />
+					<include name="testExistingPCPopUpDuringRCRegistration_2199" />
+					<include name="testExistingRetailCustomerPopupDuringRCRegistration_2200" />
+					<include name="testExistingPCPopUpDuringRCRegistration_2199_2200_2201_2186" />
+					<include name="testSwitchFromRCToPC_1304" />
+					<include name="testSwitchFromRCToPC_1304_3881" />
+					<include name="testTerminateRCEnrollRCUpgradeToPC_4694_2228" />
+					<include name="testSwitchFromRCToPCUnderSameConsultant_2198_2299" />
+				</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.hybris.billingAndShipping.AddEditBillingTest">
+				<methods>
+					<include name="testAddAndEditBillingAddressConsultantEnrollment_2045_2051" />
+					<include name="testAddAndEditBillingAutoshipCartFutureCheckboxSelected_2043_2049" />
+					<include name="testAddAndEditBillingProfileDuringPCRegistration_2044_2050" />
+					<include name="testAddAndEditNewBillingProfileOnBillingProfilePage_2041_2047" />
+				</methods>
+			</class>			
+		</classes>
+	</test>
+</suite>

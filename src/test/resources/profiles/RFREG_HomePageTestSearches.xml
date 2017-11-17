@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="HomePageFunctionalityTestSearches_ca">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+	</listeners>
+	<test name="HomePageFunctionalityTestSearches">
+		<classes>
+
+				<class name="com.rf.test.website.storeFront.hybris.HomePageFunctionalityTest">
+					<methods>
+					<include name="testSearchWithCAConsultantAccountNumber_3984"></include>
+					<include name="testSearchWithActiveRetailCustomersFullName_3985"></include>
+					<include name="testSearchWithActiveRetailCustomersAccountID_3986"></include>
+					<include name="testSearchWithActivePrefferedCustomerFullName_3987"></include>
+					<include name="testSearchWithActivePreferredCustomerAccountId_3988"></include>
+					<include name="testLookUpActiveCAConsultantFullName_4003"></include>
+					<include name="testLookUpWithActiveCAConsultantWithNoPulseOrPWS_4007"></include>
+					<include name="testLookUpWithTerminatedCAConsultantFullNameOrActID_4005"></include>
+					<include name="testLookUpWithActiveRCFullNameOrAccountID_4011"></include>
+					<include name="testLookUpWithActivePCFullNameOrAccountID_4009"></include>
+					<include name="testLookUpWithTerminatedRCFullNameOrccountID_4002"></include>
+					<include name="testLookUpWithTerminatedPCFullNameOrccountID_4001"></include>
+					<include name="testGoToFindAConsultantPageAndSearchWithCAConsultantUserWhoUpgradedFromRCtoConsultant_4000"></include>
+					<include name="testGoToFindAConsultantPageAndSearchWithCAConsultantUserWhoUpgradedFromPcToConsultant_3999"></include>
+					<include name="testPlaceAnAdhocOrderForRCUserEnrolledWithoutCreatingAnOrder_4658"></include>
+					<include name="testSearchWithCAPendingConsultantFullNameOrAccountID_3990"></include>
+					<include name="testToVerifyJOINMyTeamFunctionalityInEditMeetTheConsultantPageFromBizSite_1907"></include>
+					<include name="testVerifyMeetYourConsultantPageAsPcRcAndConWithoutLoggingIn_3829"></include>
+					<include name="testVerifyMeetYourConsultantPageAsPCRCConAsLoggingInUser_3830"></include>
+					<include name="testNavigateToHomePageAndLogout_4057"></include>
+					<include name="testLoginToUSConsultantPWSAsAnotherUSConsultantWithPulse_4070"></include>
+					<include name="testAccessingCanadianPWSiteOfExistingOldUSConsultant_4072"></include>
+					<include name="testSSNValidationForConsultantTryingToCancelUnderInvalidSponsorUpline_101"></include>
+					<include name="testSSNValidationForConsultantTryingToEnrollUnderInvalidSponsorUpline_100"></include>
+					<include name="testCheckTheMeetYourConsultantBannerOnTheHomePageOfPWS_4053_"></include>
+					<include name="testCheckPulseAutoshipForInactiveConsultant_4305"></include>
+					<include name="testSelectSponsorFromConnectWithConsultantPageShoulDirectToSponsorComSite_3751"></include>
+					<include name="testNavigateToMeetYourConsultantScreensFromVariousOtherScreensOnTheWebsite_3831"></include>
+					<include name="testSponsorSearchAndDetailsByNameOrID_2247"></include>
+					<include name="testVerifyPolicyAndProcedureLinkOnEnrollmentPage_5274"></include>
+					<include name="testPoliciesAndProceduresLinkOnSponsorSelectionPageForEnrollingConsBIZSite_5275"></include>
+					<include name="testPoliciesAndProceduresLinkOnSponsorSelectionPageForEnrollingConsCACorpSite_5276"></include>
+					<include name="testPoliciesAndProceduresLinkOnSponsorSelectionPageForEnrollingConsBIZSite_5277"></include>
+					<include name="testSearchAgainFunctionalityOnSponsorSearchSection_3850"></include>
+					<include name="testPageDisplayedAfterClickingEnrollNowBizHomePage_3928"></include>
+					<include name="testEnrollNowOnBizSiteFromHomePage_3814"></include>
+					<include name="testLoginAsPCUserAndValidateSearchFieldOnFindAConsPage_3995"></include>
+					<include name="testPostContactMeRequestOnMeetYourConsultantPageOnUSConsPWSAsAnother_4060"></include>
+					</methods>
+		</class>
+		</classes>
+	</test>
+</suite>

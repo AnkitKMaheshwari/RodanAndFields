@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="miniRegressionTestSuite_CA_AU_2">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+	</listeners>
+	<test name="miniRegressionTest_2">
+		<classes>
+			<class name="com.rf.test.website.storeFront.hybris.AccountTest">
+				<methods>
+					<include name ="testAccountInformationForUpdate_2235" />
+					<include name ="testAutoshipModuleCheckMyPulseUI_1976" />
+					<include name ="testChangeTheUserNameOfRCandLoginWithUpdateUsername_4659" />
+					<include name ="testPhoneNumberFieldValidationForConsultant_2241" />
+					<include name ="testSubscribingPulseMyAccount_3921" />
+					<include name ="testUpdateUserNameAndUpgradeUser_4278" />
+					<include name ="testCreatingCRPAutoshipUnderBizSite_3920" />
+					<include name ="testVerifyChangeUserNameFieldsMultipleTimeAndValidateLoginWithLastChange_4279_4274_5000_4260" />
+					<include name ="testTerminateConsultantAndReactivateAndPerformAdhocOrder_4308_4309_4310_4311_3720_4663_1975" />
+				</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.hybris.CartAndCheckoutValidationTest">
+				<methods>
+					<include name ="testAddNewBillingAddressDuringCheckoutAndEditExistingOne_2277" />
+					<include name ="testCheckMiniCartForConsultant_545q" />
+					<include name ="testCreateAdhocOrderConsultantAndVerifySVValue_2262" />
+					<include name ="testEditShoppingCartWhileCheckingOut_2092" />
+					<include name ="testFilterProductOnCategory_2306" />
+					<include name ="testValidateRemoveProductsFromCart_2302_2113_2120_2121_2297" />
+					<include name ="testTrySelecting2ShippingAddress_2282" />
+					<include name ="testCheckCartFromMiniCartAfterAddingProduct_2304" />
+					<include name ="testVerfifyKitProductAreNotDisplayedDuringAdhocORder_4773" />
+					<include name ="testQuickShopScreenWithRegisteredUser_2292_2293" />
+				</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.hybris.PC_CartAndCheckoutValidationTest">
+			<methods>
+					<include name ="testCheckBuyNowLink_2323_2319_2324_2326_2317_2316" /> 
+					<include name ="testCheckPcPerkIstOrderConfirmationScreen_2263" /> 
+					<include name ="testDelayPCPerks_139" />
+					<include name ="testUpdatePCTemplate_145" /> 
+					</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.hybris.OrderValidationTest">
+				<methods>
+					<include name ="testCreateAdhocOrderPC_1877" />
+					<include name ="testCreateAdhocOrderRC_1879" />
+					<include name ="testCreateAdhocOrderConsultant_1878" />
+					<include name ="testOrderDetailsForAdhocOrdersForRC_4293" />
+					<include name ="testORderPAgeUIAndEditCartForPC_1979" />
+					<include name ="testOrdersReportProblems_1980" />
+					<include name ="testPCAutoshipReturnOrderInformation_4459" />
+					<include name ="testPCAutoShipTemplateDetails_HP2_4300" />
+					<include name ="testCheckOrdersDetailsFromActionsTab_1982" />
+				</methods>
+			</class>		
+			<class name="com.rf.test.website.storeFront.hybris.billingAndShipping.AddEditShippingTest">
+				<methods>
+					<include name ="testAddAndEditShippingAddressDuringCheckout_2030_2036" />
+					<include name ="testAddAndEditShippingAddressDuringConsultantEnrollment_2033_2039" />
+					<include name ="testAddAndEditShippingAddressDuringCRPEnrollment_2034_2040" />
+					<include name ="testAddAndEditShippingAddressInAutoshipTemplate_2031_2037" />
+					<include name ="testQASValidationPerformEveryTimeUserAddsAndEditsAShippingAddress_2238_2239" />
+				</methods>
+			</class>	
+		</classes>
+	</test>
+</suite>

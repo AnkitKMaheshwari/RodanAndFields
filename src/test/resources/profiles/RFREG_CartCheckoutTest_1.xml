@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CartCheckoutTest_1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+	</listeners>
+	<test name="CartCheckoutTest_1">
+		<classes>
+
+			<class name="com.rf.test.website.storeFront.hybris.CartAndCheckoutValidationTest" />
+				<methods>
+				<include name="testCheckMiniCartForNotLoggedInUser_552q" />
+				<include name="testCheckMiniCartForConsultant_545q" />
+				<include name="testCheckThresholdByAddRemoveProductsAndIncreaseDecreaseQty_577q" />
+				<include name="testCheckThresholdByAddRemoveProductsAndIncreaseDecreaseQty_143" />
+				<include name="testAddMultipeBillingProfileDuringCheckout_414q" />
+				<include name="testValidateRemoveProductsFromCart_2302_2113_2120_2121_2297" />
+				<include name="testCheckShippingAndHandlingFeeForUPSGround_2142" />
+				<include name="testCheckShippingAndHandlingFee_2144" />
+				<include name="testCheckShippingAndHandlingFeeAsPerOrderTotal_566q" />
+				<include name="testMiniFunctionality_546q" />
+				<include name="testQuickShopScreenWithRegisteredUser_2292_2293" />
+				<include name="testVerifyCategoryProductListPage_2325" />
+				<include name="testCreateAdhocOrderConsultantAndVerifySVValue_2262" />
+				<include name="testFilterProductBasedOnPrice_2305" />
+				<include name="testFilterProductOnCategory_2306" />
+				<include name="testExistingConsultantPlaceAnAdhocOrderAndCheckForAlertMessage_2170" />
+				<include name="testShippingAndHandlingFeeForUPSGroundForOrderTotal_1000_999999_2141" />
+				<include name="testCheckShippingAndHandlingFeeForUPS1DayForOrderTotal_0_999999_2148" />
+				<include name="testWithoutLogin_AddMultipleOrderLineTotheCartWithMultipleQuantity_2295" />
+				<include name="testCheckShippingMethodForUPSGroundHD_FedEX_2151" />
+				<include name="testCheckShippingMethodForUPS2Day_FedEx2Day_2152" />
+				<include name="testProductPricesWithOutLoggingIn_2314" />
+				<include name="testAdhocShoppingCartIsPersistentForBizAndCom_2291" />
+				<include name="testPlaceAdhocOrderForRcUserEnrolledWithoutCreatingAnOrder_4657" />
+			</methods>
+		</classes>
+	</test>
+</suite>

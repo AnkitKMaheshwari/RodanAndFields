@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MiniRegressionSuite_Heirloom_1">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+	</listeners>
+	<test name="MiniRegressionTest_Heirloom_1">
+		<classes>
+			<class name="com.rf.test.website.storeFront.brandRefresh.CorpTest">
+				<methods>
+					<include name="testLoginAsExistingConsultant_372" />
+					<include name="testLoginAsExistingPC_373" />
+					<include name="testLoginAsExistingRC_374" />
+					<include name="testLogoutWithAValidUser_375" />
+					<include name="testMyAccountOptionAsRCCustomer_394" />					
+					<include name="testConsultantStandardEnrollment_503" />
+					<include name="testConsultantExpressEnrollment_505" />
+					<include name="testRCEnrollment_506" />
+					<include name="testPCEnrollment_507" />
+					<include 	name="testEnrollConsultantUsingSpecialCharsInPrefixFieldFromCorp_872" />
+					<include name="testMyAccountAsAConsultantCustomerCorp_2340" />
+					<include name="testMyAccountOptionsAs_PC_Customer_2339" />
+					<include name="testPlaceAdhocOrderFromCorpSiteForRC_508" />
+					<include name="AdhocOrderConsultantsOnlyProducts_509_2479" />
+					<include name="testPCAdhocOrderFromCorp_510" />
+					<include 	name="testAdhocOrderWithNewlyCreatedShippingAddressFromCorp_2478" />
+					<include name="testPCPerksDelay30DaysCorp_2342" />
+					<include name="testPCPerksTemplateShippingAddressUpdateOnCorpSite_2344" />
+				</methods>
+			</class>
+			<class name="com.rf.test.website.storeFront.brandRefresh.BizPWSTest">
+				<methods>
+					<include name="testMyAccountAsAConsultantCustomer_398" />
+					<include name="testPCUserTerminationFromBIZ_399" />
+					<include name="testPCPerksTemplateUpdateFromBIZ_402" />
+					<include name="RegisterConsultantUsingExistingRetailCustomerEmailId_407" />
+					<include name="testConsultantEnrollmentSignUp_504" />
+					<include name="testCheckoutAsConsultantFromBIZ_511" />
+					<include name="testPCPerksTemplateUpdateOnBizPWS_2343" />
+					<include name="testMyAccountOptionsAsPCCustomerFromBIZ_397" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

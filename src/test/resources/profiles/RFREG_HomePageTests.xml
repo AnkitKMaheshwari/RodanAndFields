@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="HomePageFunctionalityTests_ca">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="com.rf.core.listeners.TestListner" />
+		<listener class-name="com.rf.core.listeners.RetryListener" />
+	</listeners>
+	<test name="HomePageFunctionalityTests">
+		<classes>
+
+				<class name="com.rf.test.website.storeFront.hybris.HomePageFunctionalityTest">
+					<methods>					
+					<include name="testJoinMyTeamButtonPresentOnTheComAndBizSite_4350"></include>
+					<include name="testMeetyourConsultantPageFromBizSiteAfterClickOnPersonalizeMyProfileLink_4332"></include>
+					<include name="testMeetyourConsultantPageFromComSiteAfterClickOnPersonalizeMyProfileLink_4333"></include>
+					<include name="testAboutSectionOfMeetYourConsultantPage_3832"></include>
+					<include name="testVerifyLinksInMeetYourConsultantBanner_3844"></include>
+					<include name="testVerifyFooterLinksOnHomePage_3847"></include>
+					<include name="testVerifyLinksInTheTopNavigationOnHomePage_3845"></include>
+					<include name="testVerifyTopNavLoggedInConsultant_3823"></include>
+					<include name="testVerifyTopNavLoggedInConsultantbizSite_3841"></include>
+					<include name="testVerifyTopNavLoggedInPCUser_3824"></include>
+					<include name="testVerifyTopNavLoggedInPCUserbizSite_3842"></include>
+					<include name="testVerifyTopNavLoggedInRCUserbizSite_3840"></include>
+					<include name="testVerifyLinksInMeetYourConsultantBanner_3819"></include>
+					<include name="testVerifyTopNavLoggedInRCUser_3825"></include>
+					<include name="testVerifyLinksInTheTopNavigationOnHomePage_3820"></include>
+					<include name="testCountryCannotBeModified_4677"></include>
+					<include name="testLoginAsExstingRCAndAccessSolutionTool_4031"></include>
+					<include name="testValidateMeetConsultantBannerPWSSite_1895"></include>
+					<include name="testCancelFunctionalityOnEditMeetYourConsultantPageComSite_1904"></include>
+					<include name="testSubmissionGuidelinesLinkOnEditMeetTheConsultantPageBizSite_1905"></include>
+					<include name="testContactUsFunctionalityInEditMeetConsultantPagecomPWSSite_1920"></include>
+					<include name="testContactYourSponsorSectionInGettingStartedPage_1898"></include>
+					<include name="testMeetConsultantBannerOnSolutionToolPage_1897"></include>
+					<include name="testVerifyMeetConsultantPage_1892"></include>
+					<include name="testToVerifyTheMoreAboutMeSectionForPWSBiz_1900"></include>
+					<include name="testToVerifyTheMoreAboutMeSectionForPWSCom_1899"></include>
+					<include name="testEditTheMeetYourConsultantPageAndPersonaliseAndSaveTheChanges_4056"></include>
+					<include name="testLoginWithUserNameAndVerifyEditMeetYourConsultantPage_4280"></include>
+					<include name="testLoginAsRCUserAndValidateSearchFieldOnFindAConsPage_3997"></include>
+					<include name="testSearchWithUSTerminatedConsultantFullName_3993"></include>
+					<include name="testCheckDetailsOfCRPAutoshipForInactiveConsultant_4304"></include>
+					<include name="testSearchWithCATerminatedConsultantFullName_3989"></include>
+					<include name="testFollowMeFunctionalityInEditMeetTheConsultantPageForCOMPWSIte_1919"></include>
+					<include name="testAccessSolutionToolFromComSite_4027"></include>
+					<include name="testToFindAConsultantPageAndSearchWithCAConsultantFullName_3978"></include>
+					<include name="testSearchWithCAConsultantLastName_3979"></include>
+					<include name="testGoToFindAConsultantPageAndSearchWithCAConsultantFullName_3980"></include>
+					<include name="testSearchWithCAConsultantWithCID_3981"></include>
+					<include name="testSearchWithCAConsultantFirstName_3982"></include>
+					<include name="testSearchWithPWSPrefixCOMSite_3983"></include>
+					</methods>
+		</class>
+		</classes>
+	</test>
+</suite>
