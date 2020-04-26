@@ -9,3 +9,4 @@ buildHistory/
 test-output/
 *DS_Store
 logs/rf-info.html
+/reports
